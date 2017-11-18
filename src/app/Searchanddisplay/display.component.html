@@ -1,0 +1,10 @@
+<ng-template [ngIf]="showList">
+<ul>
+<li *ngFor="let country of countries"  style="margin: 10px 0">
+        {{country}}
+</li>
+</ul>
+</ng-template>
+
+<li *ngFor="let finalResult of result"  style="margin: 10px 0">
+        {{finalResult}}</li>

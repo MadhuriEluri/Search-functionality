@@ -1,0 +1,17 @@
+<div>
+    <h1>
+        My first assignment.
+    </h1>
+  <button class ="fanLightButton"  ngbButtonLabel (click) = "onFanClicked()" [ngStyle]="{'background-color':onFan === true ?'darkgreen':'red'}">
+     Fan
+  </button>
+  <button class= "fanLightButton" ngbButtonLabel (click) = "onLightClicked()" [ngStyle]="{'background-color':onLight === true ?'darkgreen':'red'}">
+    Light
+ </button>
+ <p *ngIf="onFan; else elseBlock">Fan is on</p>
+ <ng-template #elseBlock><p>Fan is off</p></ng-template>
+
+ <p class="light" *ngIf="onLight; else elseBlock2">Light is on</p>
+ <ng-template #elseBlock2><p>Light is off</p></ng-template>
+
+</div>

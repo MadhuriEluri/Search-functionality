@@ -1,0 +1,11 @@
+.lightButton{
+width: 200px;
+position: absolute;
+right: 200px;
+height: 40px;
+}
+.fanLightButton{
+    width: 200px;
+    height: 40px;
+}
+
